@@ -1,0 +1,101 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 20px;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .thanks {
+            margin-top: 25px;
+            font-weight: bold;
+            color: #ffe066;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #0077ff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0077ff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to My First HTML Website</h1>
+
+        <p>
+            Hello everyone! My name is Mohamud Yusuf Qanyare, This is my very first HTML webpage.
+            I am excited to start my journey in web development
+            and learn more about coding, design, and technology.
+        </p>
+
+        <p>
+            Building websites is fun and creative. This page is made
+            using HTML and CSS with a beautiful background and simple design.
+        </p>
+
+        <p class="thanks">
+            Special thanks to Fasttrack Technology Academy
+            and especially Teacher Ahmed Dini for the support,
+            guidance, and motivation throughout my learning journey.
+        </p>
+
+        <button onclick="showMessage()">
+            Click
+        </button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Thank you for visiting my first website!");
+        }
+    </script>
+
+</body>
+</html>

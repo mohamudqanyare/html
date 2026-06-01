@@ -1,0 +1,42 @@
+<h1 style="color:#FF6B6B;">
+  
+Paris 
+  
+</h1>
+<p style="color:#555; font-size:18px;">
+  <h1>Paris is the biggest title</h1>  The city of love, famous for the Eiffel Tower, art museums, and charming streets.
+</p>
+
+<h2 style="color:#4ECDC4;">
+Tokyo
+</h2>
+<h2>Tokyo is the second biggest title</h2><p style="color:#555; font-size:17px;">
+  A vibrant mix of futuristic technology, traditional temples, and amazing food culture.
+</p>
+
+<h3 style="color:#556270;">
+  New York
+</h3>
+<h3>New York is the third biggest title</h3><p style="color:#555; font-size:16px;">
+  Known as the city that never sleeps, filled with skyscrapers, theaters, and diverse cultures.
+</p>
+
+<h4 style="color:#C44D58;">
+  Dubai
+</h4>
+<h4>Dubai is the forth biggest title</h4>A luxurious desert city famous for modern architecture, shopping, and breathtaking skylines.
+</p>
+
+<h5 style="color:#2E86DE;">
+  London
+</h5>
+<p style="color:#555; font-size:14px;">
+  <h5>London is the fifth biggest title</h5>A historic city with royal landmarks, beautiful parks, and a rich cultural heritage.
+</p>
+
+<h6 style="color:#8E44AD;">
+  Sydney
+</h6>
+<p style="color:#555; font-size:13px;">
+  <h6>Sydney is the sixth biggest title</h6>An Australian coastal city known for the Sydney Opera House and stunning beaches.
+</p>
