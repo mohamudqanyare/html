@@ -1,0 +1,171 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semantic Layout Example</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #5f27cd);
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #1e3799;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+nav {
+    background: #0c2461;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+    background: #78e08f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Content Area */
+section {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Articles */
+article {
+    background: #f1f2f6;
+    margin-top: 15px;
+    padding: 15px;
+    border-left: 5px solid #1e3799;
+    border-radius: 5px;
+}
+
+/* Figure */
+figure {
+    text-align: center;
+    margin-top: 20px;
+}
+
+figure img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: #1e3799;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Semantic Website</h1>
+    <p>Using HTML5 Semantic Elements</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <aside>
+        <h2>Sidebar</h2>
+        <p>Latest News</p>
+
+        <details>
+            <summary>Click to View</summary>
+            <p>Special offers available this month.</p>
+        </details>
+    </aside>
+
+    <section>
+        <h2>Welcome</h2>
+        <p>This section contains the main content of the page.</p>
+
+        <article>
+            <h3>Article One</h3>
+            <p>This is an example article using semantic HTML.</p>
+        </article>
+
+        <article>
+            <h3>Article Two</h3>
+            <p>Articles can contain independent content.</p>
+        </article>
+
+        <figure>
+            <img src="https://via.placeholder.com/300x200" alt="Sample Image">
+            <figcaption>Example Figure and Caption</figcaption>
+        </figure>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Semantic Website Example</p>
+
+    <address>
+        Email: info@example.com
+    </address>
+</footer>
+
+</body>
+</html>
+```

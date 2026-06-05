@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hospital Patient Registration</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f0f4f8;
+      padding:40px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      background:white;
+      border-radius:15px;
+      padding:30px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+      color:#0b4f6c;
+    }
+
+    fieldset{
+      border:2px solid #dbeafe;
+      padding:20px;
+      margin-bottom:25px;
+      border-radius:10px;
+    }
+
+    legend{
+      padding:0 10px;
+      color:#0b4f6c;
+      font-weight:bold;
+      font-size:18px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .form-group{
+      display:flex;
+      flex-direction:column;
+    }
+
+    label{
+      margin-bottom:8px;
+      font-weight:bold;
+      color:#333;
+    }
+
+    input,
+    select,
+    textarea,
+    button{
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      font-size:15px;
+    }
+
+    textarea{
+      resize:vertical;
+      min-height:100px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus{
+      outline:none;
+      border-color:#2563eb;
+      box-shadow:0 0 5px rgba(37,99,235,0.4);
+    }
+
+    .radio-group,
+    .checkbox-group{
+      display:flex;
+      gap:15px;
+      align-items:center;
+      margin-top:10px;
+    }
+
+    button{
+      background:#2563eb;
+      color:white;
+      border:none;
+      cursor:pointer;
+      transition:0.3s;
+      width:100%;
+      margin-top:20px;
+    }
+
+    button:hover{
+      background:#1d4ed8;
+    }
+
+    .progress-area{
+      margin-top:15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Hospital Patient Registration Form</h1>
+
+  <form action="http://google.com" method="post">
+
+    <!-- Personal Information -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <div class="grid">
+
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter first name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter last name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="example@email.com">
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+44 7000 000000">
+        </div>
+
+        <div class="form-group">
+          <label>Date of Birth</label>
+          <input type="date">
+        </div>
+
+        <div class="form-group">
+          <label>Age</label>
+          <input type="number" min="0" max="120">
+        </div>
+
+        <div class="form-group">
+          <label>Profile Photo</label>
+          <input type="file">
+        </div>
+
+        <div class="form-group">
+          <label>Patient ID</label>
+          <input type="hidden" value="P-1001">
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+
+        <div class="radio-group">
+          <label><input type="radio" name="gender"> Male</label>
+          <label><input type="radio" name="gender"> Female</label>
+          <label><input type="radio" name="gender"> Other</label>
+        </div>
+      </div>
+
+    </fieldset>
+
+    <!-- Address -->
+    <fieldset>
+      <legend>Address Information</legend>
+
+      <div class="grid">
+
+        <div class="form-group">
+          <label>Address</label>
+          <textarea placeholder="Enter full address"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>City</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Country</label>
+          <select>
+            <option>Select Country</option>
+            <option>United Kingdom</option>
+            <option>Somalia</option>
+            <option>Kenya</option>
+            <option>USA</option>
+          </select>
+        </div>
+
+      </div>
+    </fieldset>
+
+    <!-- Medical Information -->
+    <fieldset>
+      <legend>Medical Information</legend>
+
+      <div class="grid">
+
+        <div class="form-group">
+          <label>Blood Group</label>
+          <select>
+            <option>Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>O+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Department</label>
+          <input list="departments">
+
+          <datalist id="departments">
+            <option value="Cardiology">
+            <option value="Neurology">
+            <option value="Orthopedics">
+            <option value="Emergency">
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label>Bed Number</label>
+          <input type="text" placeholder="Bed A-12">
+        </div>
+
+        <div class="form-group">
+          <label>Ward</label>
+          <select>
+            <option>General Ward</option>
+            <option>ICU</option>
+            <option>Private Ward</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Admission Date & Time</label>
+          <input type="datetime-local">
+        </div>
+
+        <div class="form-group">
+          <label>Pain Level</label>
+          <input type="range" min="1" max="10">
+        </div>
+
+        <div class="form-group">
+          <label>Favorite Color</label>
+          <input type="color">
+        </div>
+
+        <div class="form-group">
+          <label>Website</label>
+          <input type="url" placeholder="https://">
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label>Medical Conditions</label>
+
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Diabetes</label>
+          <label><input type="checkbox"> Asthma</label>
+          <label><input type="checkbox"> Hypertension</label>
+          <label><input type="checkbox"> Heart Disease</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Doctor Notes</label>
+        <textarea placeholder="Write patient notes here"></textarea>
+      </div>
+
+    </fieldset>
+
+    <!-- Emergency Contact -->
+    <fieldset>
+      <legend>Emergency Contact</legend>
+
+      <div class="grid">
+
+        <div class="form-group">
+          <label>Emergency Contact Name</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Relationship</label>
+          <input type="text">
+        </div>
+
+        <div class="form-group">
+          <label>Emergency Phone</label>
+          <input type="tel">
+        </div>
+
+      </div>
+    </fieldset>
+
+    <!-- Progress / Meter -->
+    <fieldset>
+      <legend>Hospital Status</legend>
+
+      <div class="progress-area">
+        <label>Bed Occupancy</label>
+        <meter value="7" min="0" max="10"></meter>
+      </div>
+
+      <div class="progress-area">
+        <label>Registration Completion</label>
+        <progress value="80" max="100"></progress>
+      </div>
+
+      <div class="progress-area">
+        <label>Total Bill Estimate</label>
+        <output>£2,500</output>
+      </div>
+
+    </fieldset>
+
+    <!-- Buttons -->
+    <fieldset>
+      <legend>Actions</legend>
+
+      <div class="grid">
+
+        <button type="submit">Register Patient</button>
+        <input type="submit">
+
+        <button type="reset">
+          Reset Form
+        </button>
+
+        <button type="button">
+          Print Form
+        </button>
+
+      </div>
+    </fieldset>
+
+  </form>
+
+</div>
+
+</body>
+</html>
